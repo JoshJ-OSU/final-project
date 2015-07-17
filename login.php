@@ -162,6 +162,7 @@ function signUp($db) {
 	$stmt->close();
 	
 	$returnArr['signupSuccess'] = 1;
+	$_SESSION['username'] = $username;
 	echo json_encode($returnArr);
 	return;
 }
