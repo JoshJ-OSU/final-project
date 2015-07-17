@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Calendar Login</title>
+    <script src="login.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<form onsubmit="requestLogin();return false;">
+  <div class="login">
+    <div>
+      <label>Login:</label>
+    </div>
+    <div>
+      <label>User Name:</label><br>
+      <input type="text" id="login-username">
+    </div>
+    <div>
+      <label>Password:</label><br>
+      <input type="password" id="login-password">
+    </div>
+    <div>
+      <button onClick="requestLogin()">Login</button>
+    </div><br>
+    <div id='login-error-report'></div>
+  </div>
+</form>
+<div class="welcome">
+  <h1>Online Calendar</h1>
+  <h3>Schedule out your life!</h3>
+</div>
+<form onsubmit="signUp(); return false">
+  <div class="signup">
+    <h2>Sign-Up</h2>
+    <label>User Name:</label>
+    <input type="text" id="signup-username"><br>
+    <div id="signup-username-error"></div>
+    <label>Password:</label>
+    <input type="password" id="signup-password"><br>
+    <label>Reenter Password:</label>
+    <input type="password" id="signup-password-confirm"><br>
+    <div id="signup-password-error"></div>
+    <button onClick="signUp()">Sign Up</button>
+  </div>
+</form>
+<div id="php-error-report"></div>
+</body>
+</html>

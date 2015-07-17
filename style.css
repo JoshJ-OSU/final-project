@@ -1,0 +1,268 @@
+/* HEADER */
+
+/* clearfix allows background to display in spite of floating inner divs */
+/* code based upon snippet found: https://css-tricks.com/snippets/css/clear-fix/ */
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.logged-in-header {
+	background: #FF7314;
+	font: normal 18px lucida sans unicode, sans-serif;
+	color: white;
+	border-radius: 0px 0px 10px 10px;
+	width: 95%;
+	min-width: 670px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	box-shadow: 5px 5px 5px #666666;
+}
+
+.welcome-text {
+	float: left;
+	padding-right: 12px;
+	display: inline
+}
+
+.close-link:hover {
+	text-decoration: underline;
+	font-weight: 700;
+	text-shadow: 3px 3px 3px #666666;
+	cursor:pointer
+}
+
+.close-link {
+	float: right;
+}
+
+
+
+/* CALENDAR */
+#month-div * {
+	vertical-align: middle;
+	text-align: center;
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#month-div {
+	text-align: center;
+	white-space: nowrap;
+	margin-left: auto;
+	margin-right: auto
+}
+
+#month-div div {
+	width: 300px;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+.calendar-div {
+	margin-left: auto;
+	margin-right: auto;
+	width: 85%;
+	min-width: 600px;
+	margin-top: 30px
+}
+
+table {
+	table-layout: fixed;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+tbody tr {
+	vertical-align: top;
+	height: 60px;
+}
+
+th, td {
+	width: 14.2%;
+	max-width: 14.2%;
+}
+
+table, th, td {
+	border: 1px solid black;
+}
+
+.date {
+	float: left;
+	padding-left: 5px;
+}
+
+.date-top {
+	width: 100%;
+	font-weight: 700;
+}
+
+.date-top:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.addDiv:hover {
+	color: rgba(0,0,0,1);
+	cursor: pointer;
+	background: #FADFAD;
+}
+
+.addDiv {
+	font-size: 24px;
+	color: rgba(0,0,0,0);
+	float: right;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+.events div:hover {
+	background: lightblue;
+	cursor: pointer;
+}
+
+.events div {
+	vertical-align: middle;
+	padding-top: 2px;
+	padding-left: 20px;
+	padding-bottom: 2px;
+	font: normal 10px lucida sans unicode, sans-serif;
+}
+
+.events {
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+h1 {
+	text-align: center;
+}
+
+/*Event Form*/
+.event-viewer-wrapper {
+	position: fixed;
+	top: 100%;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background: rgba(0,0,0,.5)
+}
+
+.event-viewer {
+	position: relative;
+	display: inline-block;
+	width: 400px;
+	height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	border: solid;
+	border-radius: 20px;
+	border-color: black;
+	//box-shadow: 10px 10px 5px #666666;
+	background: linear-gradient(to top, #FF7314, #FFAF79);
+	font: normal 18px lucida sans unicode, sans-serif;
+	color: white;
+	text-align: left;
+}
+
+.ev-top-wrap {
+	position: relative;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	display: block;
+	text-align: center;
+	border-bottom: solid;
+	border-color: black;
+	width: 100%;
+}
+
+.ev-top {
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+.ev-top * {
+	position: relative;
+	display: inline;
+	text-align: center;
+}
+
+.ev-form {
+	margin: 20px;
+	position: relative;
+	display: block;
+}
+
+.ev-form div {
+	font-size: 10px;
+	padding-left: 30px;
+}
+
+#ev-buttons button:nth-child(1) {
+	float: left;
+	display: block;
+}
+
+#ev-buttons button:nth-child(2) {
+	float: right;
+	display: block;
+}
+
+/*LOGIN.HTML*/ 
+
+.login {
+	background: #FF7314;
+	font: normal 18px lucida sans unicode, sans-serif;
+	color: white;
+	border-radius: 0px 0px 10px 10px;
+	text-align: left;
+	padding: 5px;
+	padding-left: 20px;
+	margin-bottom:20px;
+	box-shadow:5px 5px 5px #666666;
+}
+
+.login div {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+input {
+	margin-bottom: 5px;
+	margin-right: 15px;
+}
+
+.signup {
+	background: #FFAF79;
+	text-align: center;
+	border: solid;
+	border-radius: 10px;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 40px;
+	box-shadow: 10px 10px 5px #666666;
+}
+
+#login-error-report {
+	font-size: 12px;
+}
+
+.welcome {
+	text-align: center;
+}
+
+.welcome {
+	padding:5px;
+	margin:5px;
+}
